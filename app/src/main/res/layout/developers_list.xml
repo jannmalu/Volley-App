@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="@color/colorLightPurple">
+
+        
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:paddingBottom="2dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="false"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorDarkPurple"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:padding="8dp"
+                android:text="@string/user_name"/>
+
+            <TextView
+                android:id="@+id/html_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_link"
+                android:text="@string/http_url_com"/>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
